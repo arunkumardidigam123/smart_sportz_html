@@ -120,9 +120,8 @@
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
 <!-- TopNavBar -->
-<header class="sticky top-0 z-50 flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto bg-background-surface dark:bg-deep-navy border-b border-border-subtle dark:border-outline shadow-sm dark:shadow-none">
+<header class="sticky top-0 z-40 flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto bg-background-surface dark:bg-deep-navy border-b border-border-subtle dark:border-outline shadow-sm dark:shadow-none xl:pl-72">
 <div class="flex items-center gap-8">
-<span class="font-display-lg text-headline-md font-bold text-deep-navy dark:text-primary-fixed">SmartSportz.in</span>
 <nav class="hidden lg:flex items-center space-x-6">
 <a class="font-label-md text-label-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary py-2" href="#">Tournaments</a>
 <a class="font-label-md text-label-md text-text-secondary dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Live Scores</a>
@@ -144,31 +143,10 @@
 </header>
 <div class="flex min-h-screen max-w-[1920px] mx-auto">
 <!-- SideNavBar -->
-<aside class="hidden xl:flex flex-col p-6 space-y-4 fixed left-0 top-20 h-[calc(100vh-5rem)] w-[280px] bg-deep-navy dark:bg-black shadow-xl z-40">
-<div class="flex items-center space-x-3 pb-6 border-b border-outline-variant/30">
-<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary">sports_kabaddi</span>
-</div>
-<div>
-<h3 class="font-title-lg text-title-lg text-white leading-tight">Pro League Admin</h3>
-<p class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Enterprise Tier</p>
-</div>
-</div>
-        <nav id="main-nav" class="flex-1 space-y-2 py-4">
-        </nav>
-<div class="pt-4 border-t border-outline-variant/30 space-y-2">
-<a class="flex items-center space-x-3 p-3 text-on-surface-variant hover:bg-surface-variant/10 rounded-lg transition-all duration-200" href="#">
-<span class="material-symbols-outlined">help</span>
-<span class="font-label-md">Help Center</span>
-</a>
-<a class="flex items-center space-x-3 p-3 text-on-surface-variant hover:bg-surface-variant/10 rounded-lg transition-all duration-200 text-error" href="#">
-<span class="material-symbols-outlined">logout</span>
-<span class="font-label-md">Sign Out</span>
-</a>
-</div>
+<aside class="hidden xl:flex flex-col p-6 space-y-4 fixed left-0 top-0 h-screen w-64 bg-deep-navy dark:bg-black shadow-xl z-50">
 </aside>
 <!-- Main Content Canvas -->
-<main class="flex-1 xl:ml-[280px] w-full transition-all">
+<main class="flex-1 xl:ml-64 w-full transition-all">
 <!-- Hero Section -->
 <section class="relative w-full h-[716px] flex items-end overflow-hidden">
 <div class="absolute inset-0 z-0">
