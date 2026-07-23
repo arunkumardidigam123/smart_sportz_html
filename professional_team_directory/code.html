@@ -141,10 +141,9 @@
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen">
 <!-- TopNavBar -->
-<header class="sticky top-0 z-50 bg-background-surface dark:bg-deep-navy border-b border-border-subtle dark:border-outline shadow-sm dark:shadow-none h-20 w-full">
+<header class="sticky top-0 z-40 bg-background-surface dark:bg-deep-navy border-b border-border-subtle dark:border-outline shadow-sm dark:shadow-none h-20 w-full md:pl-72">
 <div class="flex justify-between items-center px-margin-desktop h-full w-full max-w-container-max mx-auto">
 <div class="flex items-center gap-8">
-<span class="font-display-lg text-headline-md font-bold text-deep-navy dark:text-primary-fixed">SmartSportz.in</span>
 <nav class="hidden md:flex items-center gap-6">
 <a class="font-label-md text-label-md text-text-secondary dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Tournaments</a>
 <a class="font-label-md text-label-md text-text-secondary dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Live Scores</a>
@@ -165,35 +164,10 @@
 </header>
 <div class="flex h-[calc(100vh-80px)] overflow-hidden">
 <!-- SideNavBar -->
-<aside class="hidden md:flex flex-col w-[280px] bg-deep-navy dark:bg-black p-6 space-y-4 shadow-xl shrink-0">
-<div class="flex items-center gap-4 mb-8">
-<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-3xl">sports_kabaddi</span>
-</div>
-<div>
-<h3 class="font-title-lg text-title-lg text-white">Pro League</h3>
-<p class="font-label-md text-label-md text-on-surface-variant">Enterprise Tier</p>
-</div>
-</div>
-<nav id="main-nav" class="flex-1 space-y-1">
-</nav>
-<div class="pt-6 border-t border-white/5 space-y-1">
-<button class="w-full flex items-center justify-center gap-2 bg-primary-container text-on-primary-container py-3 rounded-xl font-label-md text-label-md hover:brightness-110 mb-6">
-<span class="material-symbols-outlined">add</span>
-                    Create Tournament
-                </button>
-<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-variant/10 rounded-lg" href="#">
-<span class="material-symbols-outlined">help</span>
-<span class="font-label-md text-label-md">Help Center</span>
-</a>
-<a class="flex items-center gap-4 p-3 text-error hover:bg-error/10 rounded-lg" href="#">
-<span class="material-symbols-outlined">logout</span>
-<span class="font-label-md text-label-md">Sign Out</span>
-</a>
-</div>
+<aside class="hidden md:flex flex-col w-64 bg-deep-navy dark:bg-black p-6 space-y-4 shadow-xl shrink-0 h-screen fixed left-0 top-0 z-50">
 </aside>
 <!-- Main Content Area -->
-<main class="flex-1 overflow-y-auto custom-scrollbar bg-surface-container-lowest">
+<main class="flex-1 overflow-y-auto custom-scrollbar bg-surface-container-lowest md:ml-64">
 <!-- Hero Header Section -->
 <div class="relative w-full h-72 overflow-hidden bg-deep-navy">
 
