@@ -129,52 +129,116 @@
             padding-top: 120px;
             padding-bottom: 120px;
         }
+
+        /* Navbar transparent state */
+        .nav-transparent {
+            background-color: transparent !important;
+            border-color: transparent !important;
+            box-shadow: none !important;
+        }
+        .nav-transparent .nav-brand {
+            color: #ffffff !important;
+        }
+        .nav-transparent .nav-text {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        .nav-transparent .nav-text:hover {
+            color: #72db9d !important;
+        }
+        .nav-transparent .nav-text-active {
+            color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+        .nav-transparent .nav-btn-login {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        .nav-transparent .nav-btn-login:hover {
+            color: #ffffff !important;
+        }
+
+        /* Navbar scrolled state */
+        .nav-scrolled {
+            background-color: rgba(248, 249, 255, 0.8) !important;
+            backdrop-filter: blur(12px) !important;
+            border-bottom: 1px solid rgba(189, 202, 190, 0.3) !important;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+        }
+        .nav-scrolled .nav-brand {
+            color: #006c40 !important;
+        }
+        .nav-scrolled .nav-text {
+            color: #3e4a41 !important;
+        }
+        .nav-scrolled .nav-text:hover {
+            color: #0b8852 !important;
+        }
+        .nav-scrolled .nav-text-active {
+            color: #006c40 !important;
+            border-color: #006c40 !important;
+        }
+        .nav-scrolled .nav-btn-login {
+            color: #3e4a41 !important;
+        }
+        .nav-scrolled .nav-btn-login:hover {
+            color: #006c40 !important;
+        }
     </style>
 </head>
 
 <body class="bg-background text-on-background font-body-md">
     <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm h-20">
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 h-20 transition-all duration-300 nav-transparent">
         <div class="flex justify-between items-center max-w-[1280px] mx-auto px-10 h-full">
-            <div class="font-display-lg text-headline-md font-bold text-primary">SmartSportz.in</div>
+            <div class="nav-brand font-display-lg text-headline-md font-bold text-primary transition-colors duration-300">SmartSportz.in</div>
             <div class="hidden md:flex gap-8 items-center">
-                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md"
+                <a class="nav-text-active text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md transition-colors duration-300"
                     href="#">Home</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../tournament_listing_page/code.html">Tournaments</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../live_score_dashboard_premium_dark/code.html">Live Scores</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../">Results</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../professional_leaderboard_center/code.html">Leaderboards</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../organizer_dashboard/code.html">Analytics</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="#">Sports</a>
-                <a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
+                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
                     href="../premium_sponsorship_center/code.html">Partners</a>
             </div>
             <div class="flex gap-4 items-center">
-                <button
-                    class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">Login</button>
+                <button class="nav-btn-login text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">Login</button>
                 <button
                     class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:bg-primary-container transition-all active:scale-95 duration-150">Register</button>
             </div>
         </div>
     </nav>
     <!-- Hero Section -->
-    <header class="relative min-h-[921px] flex items-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
-            <div class="w-full h-full"
-                data-alt="A cinematic, low-angle shot of a grand Indian cricket stadium at dusk, with powerful floodlights casting a dramatic glow over the pristine green pitch. The atmosphere is electric, filled with a soft atmospheric haze and a modern, high-fidelity aesthetic. The color palette features deep emerald greens, crisp whites, and sophisticated shadows, perfectly aligned with a premium sports tech brand."
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmtVJt5JrPzI3zjBGPdtZGXbDdGnQR0weCs4XW7_hHlWi3X1-L_GkRJiQ7zQBpkiXqtIDHRL411jM71IBtHmZgZkDnWIFWiu91_yviT0MODiDm5xW3F07GgSJ64hS2LDKqxXbHXmpXOLlwY2ei3NTW_4XGZ2qXmLWz8rltCRoQcgT9u2PQaTUunPNqEknQPWqgoRps2ooE2ypA-6lV5UhTUFBmWB4wID30JK7qFUrVnmqoRytl5bXeo9CxDbVP6ROfp5vZbpUY0ITs')">
+    <header class="relative overflow-hidden flex flex-col">
+        <!-- Hero Video Banner -->
+        <div class="relative w-full aspect-video bg-black overflow-hidden group">
+            <video id="hero-bg-video" class="w-full h-full object-cover opacity-90" loop playsinline>
+                <source src="IMG_5480.MOV" type="video/quicktime">
+                <source src="IMG_5480.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Bottom Right Controls: Play/Pause and Mute/Unmute grouped together -->
+            <div class="absolute bottom-6 right-6 z-20 flex items-center gap-3">
+                <button id="hero-play-pause-btn" class="h-12 w-12 rounded-full bg-primary/95 text-on-primary flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-all">
+                    <span id="hero-play-pause-icon" class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pause</span>
+                </button>
+                <button id="hero-volume-btn" class="h-12 w-12 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-primary flex items-center justify-center shadow-lg hover:bg-surface-container-high transition-all hover:scale-105 active:scale-95">
+                    <span id="hero-volume-icon" class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+                </button>
             </div>
         </div>
-        <div
-            class="relative z-20 max-w-[1280px] mx-auto px-10 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Hero Content Grid -->
+        <div class="relative z-20 max-w-[1280px] mx-auto px-10 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16 md:py-24">
             <div class="space-y-8 animate-fade-in-up">
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm border border-primary-container/20">
@@ -539,6 +603,83 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
+
+        // Hero Background Video Functionality
+        const bgVideo = document.getElementById('hero-bg-video');
+        const heroPlayPauseBtn = document.getElementById('hero-play-pause-btn');
+        const heroPlayPauseIcon = document.getElementById('hero-play-pause-icon');
+        const heroVolumeBtn = document.getElementById('hero-volume-btn');
+        const heroVolumeIcon = document.getElementById('hero-volume-icon');
+
+        const toggleBgVideoPlay = () => {
+            if (!bgVideo) return;
+            if (bgVideo.paused) {
+                bgVideo.play()
+                    .then(() => {
+                        heroPlayPauseIcon.textContent = 'pause';
+                    })
+                    .catch(err => console.log("Playback failed", err));
+            } else {
+                bgVideo.pause();
+                heroPlayPauseIcon.textContent = 'play_arrow';
+            }
+        };
+
+        const toggleBgVideoVolume = () => {
+            if (!bgVideo) return;
+            bgVideo.muted = !bgVideo.muted;
+            if (bgVideo.muted) {
+                heroVolumeIcon.textContent = 'volume_off';
+            } else {
+                bgVideo.volume = 0.5;
+                heroVolumeIcon.textContent = 'volume_up';
+            }
+        };
+
+        if (heroPlayPauseBtn) {
+            heroPlayPauseBtn.addEventListener('click', toggleBgVideoPlay);
+        }
+
+        if (heroVolumeBtn) {
+            heroVolumeBtn.addEventListener('click', toggleBgVideoVolume);
+        }
+
+        // Auto-play attempt on page load
+        if (bgVideo) {
+            bgVideo.muted = false; // Start unmuted as requested
+            bgVideo.volume = 0.5;
+            
+            // Try to play unmuted
+            bgVideo.play().then(() => {
+                heroPlayPauseIcon.textContent = 'pause';
+                heroVolumeIcon.textContent = 'volume_up';
+            }).catch(err => {
+                console.log("Unmuted autoplay blocked, attempting muted autoplay", err);
+                // Fallback to muted autoplay
+                bgVideo.muted = true;
+                bgVideo.play().then(() => {
+                    heroPlayPauseIcon.textContent = 'pause';
+                    heroVolumeIcon.textContent = 'volume_off';
+                }).catch(autoplayError => {
+                    console.log("Autoplay failed completely", autoplayError);
+                    heroPlayPauseIcon.textContent = 'play_arrow';
+                });
+            });
+        }
+        // Dynamic Navbar Background on Scroll
+        const mainNav = document.getElementById('main-nav');
+        const handleNavbarScroll = () => {
+            if (!mainNav) return;
+            if (window.scrollY > 20) {
+                mainNav.classList.remove('nav-transparent');
+                mainNav.classList.add('nav-scrolled');
+            } else {
+                mainNav.classList.add('nav-transparent');
+                mainNav.classList.remove('nav-scrolled');
+            }
+        };
+        window.addEventListener('scroll', handleNavbarScroll);
+        window.addEventListener('load', handleNavbarScroll);
     </script>
 </body>
 
