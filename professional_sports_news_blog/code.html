@@ -137,6 +137,7 @@
             background: #323537;
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 <body class="overflow-x-hidden">
 <!-- SideNavBar -->
@@ -148,32 +149,7 @@
 <span class="text-on-surface-variant text-[10px] uppercase tracking-widest font-bold">Enterprise Management</span>
 </div>
 </div>
-<nav class="flex-1 space-y-2">
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="#">
-<span class="material-symbols-outlined">dashboard</span>
-<span class="font-label-sm text-label-sm">Dashboard</span>
-</a>
-<!-- Active Tab: Magazine/Articles logic maps to Analytics or a custom feed -->
-<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container text-on-secondary-container rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="../organizer_dashboard/code.html">
-<span class="material-symbols-outlined">analytics</span>
-<span class="font-label-sm text-label-sm">Insights</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="#">
-<span class="material-symbols-outlined">emoji_events</span>
-<span class="font-label-sm text-label-sm">Tournaments</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="#">
-<span class="material-symbols-outlined">groups</span>
-<span class="font-label-sm text-label-sm">Teams</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="#">
-<span class="material-symbols-outlined">person_celebrate</span>
-<span class="font-label-sm text-label-sm">Players</span>
-</a>
-<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200 cursor-pointer active:scale-95" href="#">
-<span class="material-symbols-outlined">calendar_today</span>
-<span class="font-label-sm text-label-sm">Schedules</span>
-</a>
+<nav id="main-nav" class="flex-1 space-y-2">
 </nav>
 <div class="mt-auto space-y-2 border-t border-outline-variant/10 pt-4">
 <a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-highest rounded-lg transition-all duration-200" href="#">
