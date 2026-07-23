@@ -71,7 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentPath.includes("live_score_dashboard_premium_dark") || currentPath.includes("organizer_dashboard")) {
         activeClasses = "bg-primary/10 text-primary-fixed-dim border-r-4 border-primary-fixed-dim font-bold";
         inactiveClasses = "text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant";
-    } else if (currentPath.includes("sports_categories_explorer") || currentPath.includes("professional_team_directory") || currentPath.includes("premium_contact_center")) {
+    } else if (
+        currentPath.includes("sports_categories_explorer") ||
+        currentPath.includes("professional_team_directory") ||
+        currentPath.includes("premium_contact_center") ||
+        currentPath.includes("premium_article_detail_page")
+    ) {
         activeClasses = "bg-primary/10 text-primary border-r-4 border-primary font-bold";
         inactiveClasses = "text-on-surface-variant hover:text-white hover:bg-surface-variant/20";
     } else {
@@ -90,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Generate links HTML
     const linksHTML = navItems.map(item => {
-        const isActive = currentPath.includes(item.pattern);
+        const isActive = new RegExp(item.pattern).test(currentPath);
         const classes = `flex items-center gap-4 px-4 py-3 rounded-lg transition-all duration-200 cursor-pointer active:scale-95 ${marginClass} ${isActive ? activeClasses : inactiveClasses}`;
         const iconStyle = isActive ? "font-variation-settings: 'FILL' 1;" : "";
 
