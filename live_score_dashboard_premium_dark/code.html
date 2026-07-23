@@ -103,6 +103,7 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 <body class="bg-background text-on-background min-h-screen">
 <!-- SideNavBar -->
@@ -111,39 +112,7 @@
 <h1 class="font-headline-md text-headline-md font-bold text-primary-fixed-dim">ProSports AI</h1>
 <p class="font-label-md text-label-md text-secondary-fixed-dim opacity-60">Enterprise Management</p>
 </div>
-<nav class="flex-1 space-y-2 px-3">
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg bg-primary/10 text-primary-fixed-dim border-r-4 border-primary-fixed-dim transition-all duration-200" href="../live_score_dashboard_premium_dark/code.html">
-<span class="material-symbols-outlined" data-weight="fill">dashboard</span>
-<span class="font-label-md text-label-md">Dashboard</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../sports_categories_explorer/code.html">
-<span class="material-symbols-outlined">emoji_events</span>
-<span class="font-label-md text-label-md">Tournaments</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../professional_sports_news_blog/code.html">
-<span class="material-symbols-outlined"></span>
-<span class="font-label-md text-label-md">Insights</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../professional_sports_media_gallery/code.html">
-<span class="material-symbols-outlined"></span>
-<span class="font-label-md text-label-md">Media Gallery</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="#">
-<span class="material-symbols-outlined">live_tv</span>
-<span class="font-label-md text-label-md">Live Matches</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../professional_team_directory/code.html">
-<span class="material-symbols-outlined">groups</span>
-<span class="font-label-md text-label-md">Teams</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../professional_athlete_profile/code.html">
-<span class="material-symbols-outlined">person</span>
-<span class="font-label-md text-label-md">Athletes</span>
-</a>
-<a class="flex items-center gap-4 px-4 py-3 rounded-lg text-secondary-fixed-dim hover:text-white hover:bg-on-secondary-fixed-variant transition-all duration-200" href="../organizer_dashboard/code.html">
-<span class="material-symbols-outlined">leaderboard</span>
-<span class="font-label-md text-label-md">Analytics</span>
-</a>
+<nav id="main-nav" class="flex-1 space-y-2 px-3">
 </nav>
 <div class="px-3 mt-auto space-y-2">
 <button class="w-full py-3 bg-primary-container text-on-primary-container rounded-lg font-label-md text-label-md shadow-md active:scale-95 transition-transform mb-6">

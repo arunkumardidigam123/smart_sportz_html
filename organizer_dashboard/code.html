@@ -137,6 +137,7 @@
             vertical-align: middle;
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 
 <body class="bg-background text-on-surface">
@@ -146,38 +147,7 @@
             <h1 class="font-headline-md text-headline-md font-bold text-primary-fixed">SmartSportz</h1>
             <p class="font-body-md text-body-md text-secondary-fixed-dim/60">Enterprise Admin</p>
         </div>
-        <nav class="flex-grow space-y-1 overflow-y-auto">
-            <!-- Dashboard Active -->
-            <a class="bg-primary-container text-on-primary-container rounded-lg mx-4 px-4 py-3 flex items-center gap-3 active:scale-95 transition-all"
-                href="../organizer_dashboard/code.html">
-                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-                <span class="font-body-md text-body-md">Dashboard</span>
-            </a>
-            <a class="text-secondary-fixed-dim hover:text-white hover:bg-white/5 mx-4 px-4 py-3 flex items-center gap-3 transition-colors duration-200"
-                href="../tournament_management/code.html">
-                <span class="material-symbols-outlined" data-icon="trophy">trophy</span>
-                <span class="font-body-md text-body-md">Tournaments</span>
-            </a>
-            <a class="text-secondary-fixed-dim hover:text-white hover:bg-white/5 mx-4 px-4 py-3 flex items-center gap-3 transition-colors duration-200"
-                href="../player_profile_india/code.html">
-                <span class="material-symbols-outlined" data-icon="groups">groups</span>
-                <span class="font-body-md text-body-md">Teams &amp; Players</span>
-            </a>
-            <a class="text-secondary-fixed-dim hover:text-white hover:bg-white/5 mx-4 px-4 py-3 flex items-center gap-3 transition-colors duration-200"
-                href="#">
-                <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
-                <span class="font-body-md text-body-md">Schedule</span>
-            </a>
-            <a class="text-secondary-fixed-dim hover:text-white hover:bg-white/5 mx-4 px-4 py-3 flex items-center gap-3 transition-colors duration-200"
-                href="#">
-                <span class="material-symbols-outlined" data-icon="payments">payments</span>
-                <span class="font-body-md text-body-md">Financials</span>
-            </a>
-            <a class="text-secondary-fixed-dim hover:text-white hover:bg-white/5 mx-4 px-4 py-3 flex items-center gap-3 transition-colors duration-200"
-                href="#">
-                <span class="material-symbols-outlined" data-icon="settings">settings</span>
-                <span class="font-body-md text-body-md">Settings</span>
-            </a>
+        <nav id="main-nav" class="flex-grow space-y-1 overflow-y-auto">
         </nav>
         <div class="px-4 mt-8">
             <button
