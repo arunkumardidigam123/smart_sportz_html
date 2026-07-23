@@ -130,6 +130,7 @@
         .bg-emerald-brand { background-color: #0b8852; }
         .border-emerald-brand { border-color: #0b8852; }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 <body class="overflow-hidden">
 <!-- Sidebar Navigation -->
@@ -181,24 +182,8 @@
 <!-- Main Content Area -->
 <main class="md:ml-64 h-screen flex flex-col relative overflow-hidden bg-background">
 <!-- Top Navbar -->
-<header class="h-16 flex justify-between items-center px-margin-desktop w-full bg-background border-b border-outline-variant z-40 sticky top-0">
-<div class="flex items-center gap-4 flex-1">
-<div class="relative w-full max-w-md hidden lg:block">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
-<input class="w-full bg-surface-container-low border border-outline-variant rounded-full pl-10 pr-4 py-1.5 focus:ring-1 focus:ring-primary outline-none text-body-md" placeholder="Search team or player..." type="text"/>
-</div>
-</div>
-<div class="flex items-center gap-6">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">settings</span>
-</div>
-<div class="h-8 w-[1px] bg-outline-variant"></div>
-<div class="flex gap-3">
-<button class="text-on-surface-variant font-body-md hover:text-primary">Login</button>
-<button class="bg-primary text-on-primary px-5 py-1.5 rounded-full font-bold text-sm">Register</button>
-</div>
-</div>
+<header class="sticky top-0 z-40 bg-background border-b border-outline-variant flex justify-between items-center h-16 px-margin-desktop w-full md:pl-64">
+<!-- Navigation links and actions dynamically injected by common-nav.js -->
 </header>
 <!-- Content Canvas -->
 <div class="flex-1 overflow-y-auto custom-scrollbar p-margin-desktop pb-stack-lg">

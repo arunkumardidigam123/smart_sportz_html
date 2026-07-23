@@ -123,24 +123,13 @@
             100% { transform: translateX(-50%); }
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 <body class="bg-background font-body-lg text-text-primary selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-background-surface/80 backdrop-blur-md border-b border-border-subtle shadow-sm">
 <nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto h-20">
-<div class="font-display-lg text-headline-md font-bold text-deep-navy">SmartSportz.in</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-primary border-b-2 border-primary font-semibold font-body-lg text-body-lg" href="#">Home</a>
-<a class="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" href="#">Sports</a>
-<a class="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" href="../browse_tournaments_enterprise_discovery_hub/code.html">Tournaments</a>
-<a class="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" href="../smartsportz_live_match_center/code.html">Live Score</a>
-<a class="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" href="#">Results</a>
-<a class="text-secondary hover:text-primary transition-colors font-body-lg text-body-lg" href="#">Gallery</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="px-6 py-2.5 rounded-lg border border-deep-navy text-deep-navy font-semibold hover:bg-surface-container-low transition-all">Login</button>
-<button class="px-6 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-semibold shadow-sm active:scale-95 transition-all">Register</button>
-</div>
+<!-- Navigation links and actions dynamically injected by common-nav.js -->
 </nav>
 </header>
 <main class="pt-20">

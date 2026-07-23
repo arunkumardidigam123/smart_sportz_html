@@ -183,6 +183,7 @@
             color: #006c40 !important;
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 
 <body class="bg-background text-on-background font-body-md">
@@ -190,37 +191,14 @@
     <nav id="main-nav"
         class="fixed top-0 w-full z-50 h-20 transition-all duration-300 nav-transparent">
         <div class="flex justify-between items-center max-w-[1280px] mx-auto px-10 h-full">
-            <div class="nav-brand font-display-lg text-headline-md font-bold text-primary transition-colors duration-300">SmartSportz.in</div>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="nav-text-active text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md transition-colors duration-300"
-                    href="#">Home</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../tournament_listing_page/code.html">Tournaments</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../live_score_dashboard_premium_dark/code.html">Live Scores</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../">Results</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../professional_leaderboard_center/code.html">Leaderboards</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../organizer_dashboard/code.html">Analytics</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="#">Sports</a>
-                <a class="nav-text text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md"
-                    href="../premium_sponsorship_center/code.html">Partners</a>
-            </div>
-            <div class="flex gap-4 items-center">
-                <button class="nav-btn-login text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors">Login</button>
-                <button
-                    class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:bg-primary-container transition-all active:scale-95 duration-150">Register</button>
-            </div>
+            <!-- Navigation links and actions injected dynamically by common-nav.js -->
         </div>
     </nav>
     <!-- Hero Section -->
-    <header class="relative overflow-hidden flex flex-col">
+    <section class="relative overflow-hidden flex flex-col">
         <!-- Hero Video Banner -->
         <div class="relative w-full aspect-video bg-black overflow-hidden group">
-            <video id="hero-bg-video" class="w-full h-full object-cover opacity-90" loop playsinline>
+            <video id="hero-bg-video" class="w-full h-full object-cover opacity-90" autoplay muted loop playsinline>
                 <source src="IMG_5480.MOV" type="video/quicktime">
                 <source src="IMG_5480.MOV" type="video/mp4">
                 Your browser does not support the video tag.
@@ -299,7 +277,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!-- Trusted By Section -->
     <section class="py-20 bg-surface-container-lowest border-y border-outline-variant/20">
         <div class="max-w-[1280px] mx-auto px-10">

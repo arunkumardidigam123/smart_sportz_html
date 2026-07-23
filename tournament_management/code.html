@@ -145,6 +145,7 @@
             background: linear-gradient(135deg, #081C3A 0%, #006c40 100%);
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 
 <body class="bg-background text-text-primary overflow-x-hidden">
@@ -214,42 +215,9 @@
     </aside>
     <!-- Main Content Area -->
     <main class="ml-[280px] w-[calc(100%-280px)] min-h-screen">
-        <!-- TopAppBar -->
         <header
             class="sticky top-0 z-40 bg-background-surface/80 backdrop-blur-md border-b border-border-subtle flex justify-between items-center h-16 px-gutter shadow-sm">
-            <div class="flex items-center gap-8">
-                <div class="relative">
-                    <span
-                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
-                    <input
-                        class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-body-md font-body-md w-64 focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all"
-                        placeholder="Search tournaments, teams..." type="text" />
-                </div>
-                <div class="hidden md:flex gap-6">
-                    <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md"
-                        href="../organizer_dashboard/code.html">Analytics</a>
-                    <a class="text-text-secondary hover:text-text-primary font-label-md text-label-md transition-all"
-                        href="#">Reports</a>
-                    <a class="text-text-secondary hover:text-text-primary font-label-md text-label-md transition-all"
-                        href="#">Logs</a>
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <button
-                    class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-all">
-                    <span class="material-symbols-outlined text-text-secondary">notifications</span>
-                </button>
-                <div class="h-8 w-[1px] bg-border-subtle"></div>
-                <div class="flex items-center gap-3">
-                    <div class="text-right">
-                        <p class="font-label-md text-label-md text-text-primary">Rahul Sharma</p>
-                        <p class="text-[10px] uppercase tracking-wider text-text-secondary">Admin</p>
-                    </div>
-                    <img class="w-10 h-10 rounded-full border border-border-subtle object-cover"
-                        data-alt="A professional headshot of a young Indian male sports administrator in a sharp navy blazer, set against a clean, light-colored corporate background. The lighting is soft and even, creating a friendly yet authoritative professional persona consistent with a high-end enterprise SaaS platform."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0gfDl7-HWpWmVKnELHSb7OvUQcCMfowgXmPDbkliExc5CK1EOsS9p6Trm7T8W7ljoPnKLmQhm-KaDy1QRoIwTgY97c74ezNWNdAEahPz0itoHvRdZSUN4jo_0AMfRmGoFqIXv6v2JQF2iC1o1mElfxbb7QEDLZY_46332pT3VO49ill55bDB3iDk82kSx2tfnHiYBbbmnGAN4v01Ni5Pm6adHYMrxp_ZpaitscGrEcwVYVvujy_kQHXVERpw8dorwdvQionzy5EpK" />
-                </div>
-            </div>
+            <!-- Navigation links and actions dynamically injected by common-nav.js -->
         </header>
         <!-- Page Canvas -->
         <div class="p-gutter max-w-container-max mx-auto">

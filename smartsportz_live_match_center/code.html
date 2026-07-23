@@ -127,30 +127,13 @@
             border-radius: 10px;
         }
     </style>
+    <script src="../common-nav.js" defer></script>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary/20">
 <!-- TopNavBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm h-20">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
-<div class="flex items-center gap-8">
-<span class="font-display-lg text-headline-md font-bold text-primary">SmartSportz.in</span>
-<nav class="hidden md:flex gap-6 items-center">
-<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md" href="../smartsportz_premium_landing_page/code.html">Home</a>
-<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md" href="../browse_tournaments_enterprise_discovery_hub/code.html">Tournaments</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Live Scores</a>
-<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md" href="#">Results</a>
-<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md" href="#">Leaderboards</a>
-<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200 font-label-md text-label-md" href="#">Sports</a>
-</nav>
-</div>
-<div class="flex items-center gap-4">
-<div class="relative group hidden lg:block">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="bg-surface-container-low border-none rounded-full pl-10 pr-4 py-2 w-64 focus:ring-2 focus:ring-primary text-body-sm font-body-sm transition-all" placeholder="Search matches..." type="text"/>
-</div>
-<button class="text-primary font-bold px-4 py-2 hover:bg-primary/5 rounded-lg transition-all active:scale-95 duration-150">Login</button>
-<button class="bg-primary text-on-primary font-bold px-6 py-2 rounded-lg hover:bg-primary-container transition-all active:scale-95 duration-150 shadow-sm">Register</button>
-</div>
+<!-- Navigation links and actions dynamically injected by common-nav.js -->
 </div>
 </header>
 <!-- Main Dashboard Container -->
